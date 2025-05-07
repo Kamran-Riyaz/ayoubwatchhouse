@@ -4,3 +4,21 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/* Explicitly define hover styles to ensure they work */
+.nav-link:hover {
+  background-color: #374151; /* bg-gray-700 */
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.mobile-menu.active {
+  max-height: 500px;
+}
