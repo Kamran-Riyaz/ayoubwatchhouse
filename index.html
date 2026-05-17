@@ -3,153 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
     <title>
-      Ayoub Watch House Official Website - Serving Time with Trust Since 1983
+      Ayoub Watch House — Trusted Watch Store Since 1983
     </title>
-    <!-- Using CDN for Tailwind CSS -->
+
+    <meta
+      name="description"
+      content="Ayoub Watch House is a trusted watch store in Keller, Shopian, offering affordable watches for everyday use, weddings, gifts, and special occasions since 1983."
+    />
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Poppins -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Cinzel -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .logo-font {
+        font-family: "Cinzel", serif;
+      }
+    </style>
   </head>
-  <body class="bg-gray-50">
-    <header>
-      <nav class="bg-gray-800 shadow-lg">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <!-- Mobile menu button -->
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <button
-                id="mobile-menu-button"
-                type="button"
-                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span class="absolute -inset-0.5"></span>
-                <span class="sr-only">Open main menu</span>
-                <!-- Icon when menu is closed -->
-                <svg
-                  id="menu-icon-closed"
-                  class="block size-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-                <!-- Icon when menu is open -->
-                <svg
-                  id="menu-icon-open"
-                  class="hidden size-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
 
-            <!-- Logo and Desktop Navigation -->
-            <div
-              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
-            >
-              <div class="flex shrink-0 items-center">
-                <span class="logo text-white text-xl tracking-wider">AWH</span>
-              </div>
-              <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                  <!-- <a
-                    href="#"
-                    class="nav-link rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-300"
-                    >About</a
-                  >
-                  <a
-                    href="#"
-                    class="nav-link rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors duration-300"
-                    >Contact</a
-                  > -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Right side elements -->
-            <!-- <div
-              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-            >
-              <button class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-1 rounded text-sm font-medium transition-colors duration-300">Shop Now</button>
-            </div> -->
-          </div>
-        </div>
-
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="mobile-menu sm:hidden">
-          <div class="space-y-1 px-2 py-3">
-            <!-- <a
-              href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >About</a
-            >
-
-            <a
-              href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >Contact</a
-            > -->
-          </div>
-        </div>
-      </nav>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-100 z-50"
+    >
       <div
-        class="min-h-screen bg-white flex items-center justify-center px-6 md:px-12"
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
       >
-        <div
-          class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
-        >
-          <!-- Text content -->
-          <div>
-            <h1 class="text-2xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Ayoub Watch House
-            </h1>
-            <p class="text-lg text-gray-600 mb-6">
-              Serving Time with Trust Since 1983
-            </p>
-            <!-- <a href="#get-started" class="inline-block px-6 py-3 bg-[#6c63ff] text-white font-semibold rounded-lg hover:bg-black transition">
-              Get Started
-            </a> -->
-          </div>
+        <!-- Logo -->
+        <a href="#" class="logo-font text-xl md:text-2xl font-semibold tracking-[0.25em]">
+          AWH
+        </a>
 
-          <!-- Image content -->
-          <div class="flex justify-center md:justify-end">
-            <img
-              src="hero.svg"
-              alt="Hero Illustration"
-              class="w-full max-w-md md:max-w-full"
-            />
-          </div>
-        </div>
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#about" class="hover:text-gray-500 transition">
+            About
+          </a>
+
+          <a href="#services" class="hover:text-gray-500 transition">
+            Services
+          </a>
+
+          <a href="#contact" class="hover:text-gray-500 transition">
+            Contact
+          </a>
+        </nav>
+
+        <!-- WhatsApp Button -->
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          class="hidden md:flex bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition"
+        >
+          WhatsApp
+        </a>
       </div>
     </header>
 
-    <main></main>
+    <!-- Hero -->
+    <section
+      class="min-h-screen flex items-center pt-24 px-6 bg-gradient-to-b from-white to-gray-50"
+    >
+      <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-14 items-center"
+      >
+        <!-- Left -->
+        <div>
+          <p
+            class="uppercase tracking-[0.3em] text-sm text-gray-500 mb-4 font-medium"
+          >
+            Since 1983
+          </p>
 
-    <script src="script.js"></script>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-6"
+          >
+            Ayoub Watch House
+          </h1>
+
+          <p
+            class="text-gray-600 text-lg leading-relaxed max-w-xl mb-8"
+          >
+            Trusted watches for everyday use, weddings, gifts, and special
+            occasions in Keller, Shopian.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              class="bg-black text-white px-7 py-3 rounded-full font-medium hover:bg-gray-800 transition"
+            >
+              Contact Us
+            </a>
+
+            <a
+              href="#about"
+              class="border border-gray-300 px-7 py-3 rounded-full font-medium hover:bg-gray-100 transition"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="flex justify-center">
+          <img
+            src="hero.png"
+            alt="Ayoub Watch House"
+            class="w-full max-w-lg object-contain"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+          <div>
+            <img
+              src="shop.jpg"
+              alt="Shop"
+              class="rounded-3xl shadow-sm"
+            />
+          </div>
+
+          <div>
+            <p class="text-sm uppercase tracking-[0.25em] text-gray-500 mb-4">
+              About Us
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">
+              Serving Time With Trust
+            </h2>
+
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Ayoub Watch House is a trusted watch store in Keller, Shopian,
+              offering affordable watches for everyday use, weddings, gifts,
+              and special occasions since 1983.
+            </p>
+
+            <p class="text-gray-600 leading-relaxed">
+              We also provide watch accessories, battery replacement, strap
+              fitting, and repair services backed by reliable customer service
+              and decades of trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <p class="text-sm uppercase tracking-[0.25em] text-gray-500 mb-4">
+            Services
+          </p>
+
+          <h2 class="text-3xl md:text-4xl font-semibold">
+            What We Offer
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-gray-100 hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-3">
+              Affordable Watches
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Quality watches for everyday use, weddings, gifting, and special
+              occasions.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-gray-100 hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-3">
+              Battery Replacement
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Quick and reliable battery replacement service for various watch
+              models.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-gray-100 hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-3">
+              Strap Fitting
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Watch strap fitting and adjustments for better comfort and style.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-gray-100 hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-3">
+              Watch Repair
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Trusted repair services backed by years of experience and local
+              customer trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6">
+      <div
+        class="max-w-5xl mx-auto bg-black rounded-[2rem] text-white text-center px-8 py-16"
+      >
+        <p class="uppercase tracking-[0.3em] text-sm text-gray-400 mb-4">
+          Ayoub Watch House
+        </p>
+
+        <h2 class="text-3xl md:text-5xl font-semibold leading-tight mb-6">
+          Trusted Since 1983
+        </h2>
+
+        <p class="text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+          Affordable watches and trusted services for generations in Keller,
+          Shopian.
+        </p>
+
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          class="inline-flex bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition"
+        >
+          Contact on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="border-t border-gray-100 py-10 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 items-center justify-between"
+      >
+        <div>
+          <h3 class="logo-font text-2xl tracking-[0.25em] mb-2">
+            AWH
+          </h3>
+
+          <p class="text-gray-600 text-sm">
+            Main Market, Keller, Bongam, Shopian
+          </p>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm text-gray-600">
+          <a href="#">Instagram</a>
+          <a href="#">Google Maps</a>
+          <a href="tel:+919999999999">Call</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
